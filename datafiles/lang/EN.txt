@@ -77,24 +77,24 @@
 # Painter is supposed to be French, hence all the French/French-derived words and odd sentence structure.
 # Main Hub Dialogue
 "demopainter_newfile"        : "Hmm... You are the one who scattered my precious /1 INK! The Critics are already en route... you had better bring my INK back to me before they arrive."
-"demopainter_nosecrets"      : "Hmm... My patience is shrinking, tiny candy lady. Find my /1 INK."
+"demopainter_nosecrets"      : "Hmm... My patience is shrinking, tiny garbage lady. Find my /1 INK."
 "demopainter_fewsecrets"     : "Hmm... I see you have started to return some of my /1 INK, but there is still more left. There is little time for us to chit the chat, I'm afraid, I'm much too busy preparing the show..."
 "demopainter_3secrets"       : "Hmm... Did you see them? Look at their beady little eyes... They think they can critique me? MOI? Hmph."
-"demopainter_6secrets"       : "Hmm... You're halfway there, confiseur, but please hurry. If they are kept waiting any longer, the Critics are sure to pen a scathing critique of me in one of those free magazines you find on airplanes..."
-"demopainter_9secrets"       : "Hmm... Perhaps I judged you too harshly, confiseur. The Critics seem to appreciate your roguish smile and lovable antics..."
+"demopainter_6secrets"       : "Hmm... You're halfway there, bombardier, but please hurry. If they are kept waiting any longer, the Critics are sure to pen a scathing critique of me in one of those free magazines you find on airplanes..."
+"demopainter_9secrets"       : "Hmm... Perhaps I judged you too harshly, bombardier. The Critics seem to appreciate your roguish smile and lovable antics..."
 "demopainter_allsecrets"     : "Hmm... Finally, you've recovered all of my /1 INK! Please, mademoiselle, enjoy the show."
 "demopainter_invalidsecrets" : "Hmm... There is something to be said for the strange connection which any interactive art has to its host medium. Even the most well-preserved copy of Madden NFL 2001 is only as good as the PlayStation 2 upon which it runs, or as pure as the intentions of one who runs it... You understand, right?"
 
 # Dialogue for After the Allotted 1 Hour of Playtime
-"demopainter_overtimeallsecrets"    : "Hmm... Your time at the exhibition may have expired, Confiseur, but I implore you to enjoy the art for as long as you wish! You have done me a great service, and it is no shellac off my back if you wish to stay a little longer."
-"demopainter_overtimenotallsecrets" : "Hmm... You may have bought a ticket, Confiseur, but you are only owed 60 short minutes from moi. Your unhelpful behind had better make itself scarce before someone notices that your time is up..."
+"demopainter_overtimeallsecrets"    : "Hmm... Your time at the exhibition may have expired, Bombardier, but I implore you to enjoy the art for as long as you wish! You have done me a great service, and it is no shellac off my back if you wish to stay a little longer."
+"demopainter_overtimenotallsecrets" : "Hmm... You may have bought a ticket, Bombardier, but you are only owed 60 short minutes from moi. Your unhelpful behind had better make itself scarce before someone notices that your time is up..."
 
 
 # Molasses Room Dialogue
 # This is placeholder for now, unsure if we need a line for this.
 "demopainter_molasses"              : "No! Not The Frog too! Now all of my paintings are ruined..."
 "demopainter_molasses_gotsecrets_a" : "Hmm... My beautiful The Frog, at last you have been restored to your former glory! I promise never to take my eye off of you again..."
-"demopainter_molasses_gotsecrets_b" : "Hmm... I'm impressed to see such refinement to your tastes, confiseur. You know, this piece is my Magnum Oculus, so I'm not surprised that you gravitated towards it so strongly."
+"demopainter_molasses_gotsecrets_b" : "Hmm... I'm impressed to see such refinement to your tastes, bombardier. You know, this piece is my Magnum Oculus, so I'm not surprised that you gravitated towards it so strongly."
 "demopainter_molasses_sleeping"     : "Zzz... A starving artist like me needs his beauty sleep too..."
 
 
@@ -287,23 +287,23 @@
 
 "judgmentinfo_disappointing_1" : "[j_painter_pose,upset]Honestly, I'm not sure why you bothered showing up in the first place..."
 "judgmentinfo_disappointing_2" : "True art is to be admired, imbecile! Instead of showing your respect for my creative genius, you ran around like a rat, mandhandling my work with your filthy little gloves."
-"judgmentinfo_disappointing_3" : "I had hoped for more from you, confiseur. How disappointing..."
+"judgmentinfo_disappointing_3" : "I had hoped for more from you, bombardier. How disappointing..."
 
 "judgmentinfo_fine_1"          : "[j_painter_pose,normal]It was... adequate, je suppose."
 "judgmentinfo_fine_2"          : "[j_painter_pose,upset]But did you not also sense something more to my paintings? [delay][j_painter_pose,normal]It saddens me that you failed to fully appreciate their depth."
-"judgmentinfo_fine_3"          : "[j_painter_pose,devious]Regardless, confiseur, you performed acceptably..."
+"judgmentinfo_fine_3"          : "[j_painter_pose,devious]Regardless, bombardier, you performed acceptably..."
 
 "judgmentinfo_perfect_1"       : "[j_painter_pose,devious]Not only have you returned all of my precious INK, but you did it with such showmanship too!"
 "judgmentinfo_perfect_2"       : "[j_painter_pose,devious]I was worried your fiasco would upset the Critics, but I've never seen them so enthralled!"
 "judgmentinfo_perfect_3"       : "[j_painter_pose,normal]I'm sure you're quite happy too, no?  [j_painter_pose,upset]Don't think I didn't see you lining your pockets while you were busy \"admiring\" my paintings!"
-"judgmentinfo_perfect_4"       : "[j_painter_pose,devious]Ha! I jest. You earned it, confiseur. Your performance tonight was beyond reproach!"
+"judgmentinfo_perfect_4"       : "[j_painter_pose,devious]Ha! I jest. You earned it, bombardier. Your performance tonight was beyond reproach!"
 
 "judgmentinfo_fast_1"          : "[j_painter_pose,devious]You haven't given me enough time to think about it! I feel that-"
 "judgmentinfo_fast_2"          : "[j_painter_pose,upset]Quit looking at your timepiece, you blasted thing!"
 "judgmentinfo_fast_3"          : "[j_painter_pose,normal]You ought to slow down a little now and then, it might do you some good."
 
 "judgmentinfo_holyshit_1"      : "[j_painter_pose,surprised]Mon Dieu, my expectations for you have been completely and utterly surpassed!"
-"judgmentinfo_holyshit_2"      : "[j_painter_pose,devious]Magnifique![delay] Fantastique![delay] [j_painter_pose,normal]Confiseur, for you I have no more words!"
+"judgmentinfo_holyshit_2"      : "[j_painter_pose,devious]Magnifique![delay] Fantastique![delay] [j_painter_pose,normal]Bombardier, for you I have no more words!"
 "judgmentinfo_holyshit_3"      : "[j_painter_pose,upset]If only the others could appreciate my art the way you do. C'est la vie..."
 
 "judgmentinfo_ending"          : "[j_painter_pose,normal]Now, if you'll excuse me, I have some important meditations to return to..."
@@ -319,7 +319,7 @@
 
 
 # Character Name.
-"prompt_PZ" : "Pizzelle"
+"prompt_PZ" : "Doizelle"
 "prompt_PN" : "Pizzano"
 "prompt_JB" : "Jack Black"
 
