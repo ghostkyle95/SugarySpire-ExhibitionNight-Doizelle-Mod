@@ -71,32 +71,44 @@ function state_player_wallkick()
         flash = true;
         xscale = dir;
         
-        if (key_attack)
+        if (sprite_index == spr_wallJumpFastFall || sprite_index == spr_wallJumpFastFallIntro)
         {
-            repeat (5)
-            {
-                instance_create(random_range(bbox_left, bbox_right), random_range(bbox_top, bbox_bottom), obj_secretpoof, 
-                {
-                    sprite_index: spr_spinningFireParticle
-                });
-            }
+			if (key_attack)
+			{
+	            repeat (5)
+	            {
+	                instance_create(random_range(bbox_left, bbox_right), random_range(bbox_top, bbox_bottom), obj_secretpoof, 
+	                {
+	                    sprite_index: spr_spinningFireParticle
+	                });
+	            }
             
-            movespeed = 12;
-            hsp = movespeed * dir;
-            state = States.mach3;
-            image_index = 0;
-            sprite_index = spr_rollgetup;
-            fmod_studio_event_instance_start(sndMachStart);
+	            movespeed = 12;
+	            hsp = movespeed * dir;
+	            state = States.mach3;
+	            image_index = 0;
+	            sprite_index = spr_rollgetup;
+	            fmod_studio_event_instance_start(sndMachStart);
+			}
+	        else
+	        {
+	            landAnim = true;
+	            movespeed = 8;
+	            hsp = movespeed * dir;
+	            state = States.normal;
+	            instance_create(x, y, obj_landcloud);
+	            event_play_oneshot("event:/SFX/player/step", x, y);
+	        }
         }
-        else
-        {
-            landAnim = true;
-            movespeed = 8;
-            hsp = movespeed * dir;
-            state = States.normal;
-            instance_create(x, y, obj_landcloud);
-            event_play_oneshot("event:/SFX/player/step", x, y);
-        }
+		else
+		{
+			image_index = 0;
+			image_speed = 0.35;
+			sprite_index = spr_player_PZ_slipSlide_intro;
+			state = States.puddle;
+			vsp = -11;
+			grounded = 0;
+		}
     }
     
     if (sprite_index == spr_wallJumpIntro && sprite_animation_end())

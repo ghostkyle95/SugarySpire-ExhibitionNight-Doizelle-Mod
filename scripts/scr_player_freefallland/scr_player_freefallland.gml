@@ -10,6 +10,18 @@ function state_player_freefallland()
     alarm[4] = 14;
     vsp = 0;
     hsp = 0;
+	
+	if (sprite_index == spr_diveBombland)
+	{
+		image_index = 0;
+		image_speed = 0.35;
+		sprite_index = spr_player_PZ_geyser;
+		state = States.jump;
+		vsp = -11;
+		grounded = 0;
+        jumpAnim = false;
+		instance_create(x, y, obj_bombExplosionPlayer)
+	}
     
     if (sprite_animation_end())
     {
