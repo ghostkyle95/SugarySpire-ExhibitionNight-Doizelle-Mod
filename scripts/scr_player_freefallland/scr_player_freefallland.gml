@@ -16,11 +16,12 @@ function state_player_freefallland()
 		instance_create(x, y, obj_bombExplosionPlayer)
 		state = States.jump;
 		grounded = 0;
+        jumpAnim = false;
+		jumpStop = true;
+		sprite_index = spr_player_PZ_geyser;
 		image_index = 0;
 		image_speed = 0.35;
-		sprite_index = spr_player_PZ_geyser;
 		vsp = -20;
-        jumpAnim = false;
 	}
     
     if (sprite_animation_end())

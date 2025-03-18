@@ -106,6 +106,7 @@ function state_player_wallkick()
 			image_speed = 0.35;
 			sprite_index = spr_player_PZ_slipSlide_intro;
 			state = States.puddle;
+			movespeed = abs(movespeed)
 			vsp = -11;
 			grounded = 0;
 		}
