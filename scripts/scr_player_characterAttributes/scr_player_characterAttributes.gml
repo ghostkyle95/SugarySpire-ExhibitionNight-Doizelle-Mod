@@ -314,21 +314,31 @@ function define_palette_sprite(argument0, argument1 = [1, 2])
     trace("INIT PAL BASE : ", _struct);
 }
 
+#region Pizzelle Definitions
+
 define_palette_sprite(Characters.Pizzelle, [0, 1]);
-define_player_palette(Characters.Pizzelle, "palette_PZ_default", 4259839, 3979494, 2631776, undefined, 13773959, 3736096, 9988216, 8628991, 14496);
-define_player_palette(Characters.Pizzelle, "palette_PZ_classic", 16777215, 13150344, 13150344, undefined);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionnight", 12105936, 6907567, 2631776, undefined);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionred", 12512, 88, 88, undefined);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionblack", 4800062, 2629656, 2629656, undefined);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionpurple", 11230063, 7220541, 7220541, undefined, 9437384, 4194448, 12105936);
-define_player_palette(Characters.Pizzelle, "palette_PZ_noise", 8446200, 1607896, 1607896, undefined, 1607896, 14496, 14496);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionbrain", undefined, 0, 4528756, spr_demopattern_brain, 6301864, 3670136, 3670136);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionbraingold", undefined, 0, 88, spr_demopattern_brainGold, 12436, 2106960, 2106960);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionpaper", undefined, 0, 16296056, spr_demopattern_paper, 16298128, 13660176, 13660176);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionentryway", undefined, 0, 37088, spr_demopattern_entryway, 3160248, 2631776, 2631776);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionsteamy", undefined, 0, 16375551, spr_demopattern_steamy, 11042984, 15743104, 9461864);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionmineshaft", undefined, 0, 8340489, spr_demopattern_mineshaft, 4771936, 5793792, 5793792);
-define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionmolasses", undefined, 0, 5793792, spr_demopattern_molasses, 1601784, 12464, 12464);
+//	DEFAULT:				CHARACTER			NAME					CLOTHES		CLOTHES_SHADING		PATCHES		PATTERN			SCOOTER		SCOOTER_DARK	SCOOTER_THRUSTER	SKIN		SKIN_SHADING
+define_player_palette(Characters.Pizzelle, "palette_PZ_default",	#ffff40,	#e6b83c,			#602828,	undefined,		#872cd2,	#200239,		#786898,			#ffaa83,	#a03800);
+
+
+define_player_palette(Characters.Pizzelle, "palette_PZ_classic", #48a0f8, #2850a8, #d868a0, undefined, #872cd2,	#200239, #786898, #c08038, #a03800);
+
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionnight", #79a0f8, #5b50a8, #d868a0, undefined, #872cd2,	#200239, #786898, #c08038, #a03800);
+
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionred", #e03000, #580000, #580000, undefined, #872cd2,	#200239, #786898, #c08038, #a03800); // 3 Secrets
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionblack", #3e3e49, #182028, #182028, undefined, #872cd2,	#200239, #786898, #c08038, #a03800); // 6 Secrets
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionpurple", #6f5bab, #3d2d6e, #3d2d6e, undefined, #c80090, #900040, #d0b8b8, #c08038, #a03800); // 9 Secrets
+define_player_palette(Characters.Pizzelle, "palette_PZ_noise", #f8e080, #d88818, #d88818, undefined, #d88818, #a03800, #a03800, #c08038, #a03800); // 12 Secrets
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionbrain", undefined, c_black, #741A45, spr_demopattern_brain, #a82860, #780038, #780038, #c08038, #a03800); // Judgement
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionbraingold", undefined, c_black, #580000, spr_demopattern_brainGold, #943000, #502620, #502620, #c08038, #a03800); // 303%
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionpaper", undefined, c_black, #78A8F8, spr_demopattern_paper, #90b0f8, #1070d0, #1070d0, #c08038, #a03800); // Paper
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionentryway", undefined, c_black, #E09000, spr_demopattern_entryway, #b83830, #602828, #602828, #c08038, #a03800); // Entryway
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionsteamy", undefined, c_black, #FFDEF9, spr_demopattern_steamy, #a880a8, #8038f0, #686090, #c08038, #a03800); // Cottontown
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionmineshaft", undefined, c_black, #09447F, spr_demopattern_mineshaft, #60d048, #006858, #006858, #c08038, #a03800); // Mines
+define_player_palette(Characters.Pizzelle, "palette_PZ_exhibitionmolasses", undefined, c_black, #006858, spr_demopattern_molasses, #f87018, #b03000, #b03000, #c08038, #a03800); // Molasses
+
+#endregion
+
 palette_surface = surface_create(1, 1);
 
 for (i = 0; i < array_length(global.CharacterPalette); i++)

@@ -14,7 +14,7 @@ function cutscene_judgment_init()
         image_xscale = 1;
     }
     
-    cr = 100209;
+    cr = inst_100209;
     cr.Region_active = true;
     
     with (obj_judgmentpainter)
