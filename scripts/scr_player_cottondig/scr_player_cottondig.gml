@@ -89,7 +89,7 @@ function state_player_cottondig()
     }
     else
     {
-        movespeed = approach(movespeed, 14, 0.5);
+        movespeed = approach(movespeed, 20, 0.5);
         angle_diff = 0;
         
         if (move != 0 || move2 != 0)
