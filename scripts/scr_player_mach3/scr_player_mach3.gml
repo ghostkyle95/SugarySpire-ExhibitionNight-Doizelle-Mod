@@ -58,7 +58,7 @@ function state_player_mach3()
     if (sprite_animation_end() && (sprite_index == spr_rollgetup || sprite_index == spr_mach3hit || sprite_index == spr_machdashpad))
         sprite_index = spr_mach3player;
     
-    if (grounded && (sprite_index == spr_dive || sprite_index == spr_wallJumpCancelIntro || sprite_index == spr_wallJumpCancel))
+    if (grounded && (sprite_index == spr_dive || sprite_index == spr_player_PZ_geyser || sprite_index == spr_wallJumpCancelIntro || sprite_index == spr_wallJumpCancel))
         sprite_index = spr_rollgetup;
     
     if (!grounded && !key_down && sprite_index == spr_dive)

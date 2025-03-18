@@ -50,14 +50,14 @@ function state_player_wallkick()
         
         if (!key_up)
         {
-            sprite_index = spr_wallJumpCancelIntro;
+            sprite_index = spr_player_PZ_geyser;
             image_index = 0;
-            movespeed = 12;
+            movespeed = 15;
             hsp = movespeed * xscale;
             vsp = -5;
             state = States.mach3;
+			instance_create(x, y, obj_bombExplosionPlayer);
             fmod_studio_event_instance_start(sndMachStart);
-            fmod_studio_event_instance_start(sndWallkickCancel);
         }
         else
         {
@@ -106,7 +106,8 @@ function state_player_wallkick()
 			image_speed = 0.35;
 			sprite_index = spr_player_PZ_slipSlide_intro;
 			state = States.puddle;
-			movespeed = abs(movespeed)
+			movespeed = abs(movespeed);
+			xscale = dir;
 			vsp = -11;
 			grounded = 0;
 		}

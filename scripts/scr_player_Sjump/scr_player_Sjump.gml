@@ -93,14 +93,15 @@ function state_player_Sjump()
             if (move != 0)
                 xscale = move;
             
-            movespeed = 12;
+            movespeed = 15;
             state = States.mach3;
             flash = true;
             jumpStop = true;
-            vsp = -4;
+            vsp = -10;
             image_index = 0;
-            sprite_index = spr_superjumpCancel;
+            sprite_index = spr_player_PZ_geyser;
             fmod_studio_event_instance_start(sndMachStart);
+			instance_create(x, y, obj_bombExplosionPlayer);
             
             with (create_particle(x, y, spr_crazyRunHoopEffect))
                 image_xscale = other.xscale;
